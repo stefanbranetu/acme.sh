@@ -4761,10 +4761,12 @@ _process() {
         shift
         ;;
       --syslog)
-        _syslog="1"
         if ! _startswith "$2" '-'; then
           _syslog="$2"
           shift
+        fi
+        if [ -z "$_syslog" ]; then
+          _syslog="1"
         fi
         SYS_LOG="$_syslog"
         ;;
