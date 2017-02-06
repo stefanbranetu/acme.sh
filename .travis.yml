@@ -24,7 +24,7 @@ install:
   
 script:
   - echo "TEST_LOCAL=$TEST_LOCAL"
-  - nc -h 2>&1"
+  - nc -h 2>&1
 
 
 
